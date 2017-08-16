@@ -1,5 +1,7 @@
 function handleTest(req, res, next) {
-  res.json({ message: 'Testing' });
+  const number = parseInt(req.params.number, 10);
+
+  res.json({ result: number * number });
 }
 
 module.exports = Object.freeze({
