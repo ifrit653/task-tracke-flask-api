@@ -2,8 +2,10 @@ const express = require('express');
 
 const app = express();
 
-app.get('/', (req, res, next) => {
-  res.send('Hello World!');
+app.use('/', express.static('./src/static'));
+
+app.get('/api/test', (req, res, next) => {
+  res.json({ message: 'Testing' });
 });
 
 const port = parseInt(process.env.PORT || 8080, 10);
