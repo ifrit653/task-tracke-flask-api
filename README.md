@@ -23,7 +23,7 @@ Try Node.js now:
 node
 ```
 
-This is a REPL (read-evel-print loop) that allows you to experiment with Node.js. You can use it to prototype code excerpts, or even load 3rd-party modules to play around with them. Hit CTRL-C twice to exit.
+This is a REPL (read-eval-print loop) that allows you to experiment with Node.js. You can use it to prototype code excerpts, or even load 3rd-party modules to play around with them. Hit CTRL-C twice to exit.
 
 Check the version of Node.js you have (always good to know):
 
@@ -262,8 +262,6 @@ app.get('/api/test', (req, res, next) => {
 
 app.use('/', express.static('./src/static'));
 ```
-
-**Note:** The order matters. Path specificity comes into play.
 
 **Note:** Is `{ message: 'Testing 123' }` "JSON"? No. It's JavaScript. It's only "JSON" in the serialized form, as a string: `'{ "message": "Testing 123" }'`.
 
