@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/atesgoral/node-api-backend-skeleton#readme",
   "dependencies": {
+    "body-parser": "^1.17.2",
     "express": "^4.15.4"
   }
 }
